@@ -42,7 +42,7 @@ class currency_exchange():
         return self.exchange[base, exchange]
 
     def get_base_list(self):
-        return self.base_list
+        return sorted(self.base_list)
 
 if __name__ == '__main__':
     c = currency_exchange()
